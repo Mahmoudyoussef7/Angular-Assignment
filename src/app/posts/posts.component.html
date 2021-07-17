@@ -1,0 +1,9 @@
+<div class="d-flex flex-wrap">
+  <div class="card m-3" style="width: 18rem;" *ngFor="let post of arrPosts">
+      <div class="card-body">
+        <h5 class="card-title">{{post.title}}</h5>
+        <p class="card-text">{{post.body}}</p>
+        <a routerLink="/posts/{{post.id}}" class="btn btn-primary" (click)="showComments(post)">Comments</a>
+    </div>
+  </div>
+</div>

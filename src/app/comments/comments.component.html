@@ -1,0 +1,10 @@
+<div class="d-flex flex-wrap">
+  <div class="card m-3" style="width: 18rem;" *ngFor="let p of postComments">
+    <div class="card-body">
+      <h5 class="card-title"><b>PostId:</b>{{p.postId}}</h5>
+      <h5 class="card-title"><b>Id:</b>{{p.id}}</h5>
+      <h5 class="card-title"><b>name:</b>{{p.name}}</h5>
+      <p class="card-text">{{p.body}}</p>
+    </div>
+  </div>
+</div>

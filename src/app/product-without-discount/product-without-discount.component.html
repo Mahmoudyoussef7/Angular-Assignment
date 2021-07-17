@@ -1,0 +1,14 @@
+<h4>product-without-discount</h4>
+<div class="d-flex flex-wrap p-3 mb-2 bg-secondary text-black rounded">
+  <div class="card m-2" style="width: 18rem;" *ngFor="let prod of prodWithoutDiscount">
+    <img src="{{prod.Img}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-text"><b>ID :</b>{{prod.ID}}</h5>
+      <h5 class="card-text"><b>Name :</b>{{prod.Name}}</h5>
+      <h5 class="card-text"><b>Price :</b>{{prod.Price|currency:' EGP '}}</h5>
+      <h5 class="card-text"><b>Quantity :</b>{{prod.Quantity}}</h5>
+    </div>
+  </div>
+</div>
+<hr><br>
+
